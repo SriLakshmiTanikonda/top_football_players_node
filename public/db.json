@@ -1,0 +1,50 @@
+{"players": [
+  {
+     "image":"https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Cristiano_Ronaldo_playing_for_Al_Nassr_FC_against_Persepolis%2C_September_2023_%28cropped%29.jpg/330px-Cristiano_Ronaldo_playing_for_Al_Nassr_FC_against_Persepolis%2C_September_2023_%28cropped%29.jpg",
+     "name":"Cristiano Ronaldo",
+     "nationality":"Portugal",
+     "clubs":"Sporting CP, Manchester United, Real Madrid, Juventus, Manchester United, Al Nassr",
+     "goals":885,
+     "matches":1217
+  },
+  {
+     "image":"https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg/330px-Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg",
+     "name":"Lionel Messi",
+     "nationality":"Argentina",
+     "clubs":"Barcelona B, Barcelona, Paris Saint-Germain, Inter Miami",
+     "goals":828,
+     "matches":1055
+  },
+  {
+     "image":"https://i.inews.co.uk/content/uploads/2020/02/GettyImages-1195415842-scaled.jpg",
+     "name":"Erling Haland",
+     "nationality":"England",
+     "clubs":"Molde,Bryne,Norway",
+     "goals":204,
+     "matches":246
+  },
+  {
+     "image":"https://tse3.mm.bing.net/th?id=OIP.wv61zEsCTkQfnAMgfqKIJAHaMD&pid=Api&P=0&h=220",
+     "name":"Neymar",
+     "nationality":"Brazil",
+     "clubs":"Santos FC,FC Barcelona,Paris Saint-Germain",
+     "goals":436,
+     "matches":708
+  },
+  {
+     "image":"https://1.bp.blogspot.com/-jUdAZ0w2yMY/W1C2UGl4CTI/AAAAAAAAAOA/yfB-W6BJvx8YA2EUkLys5eUBr-_APv4MwCLcBGAs/s1600/mbappe.jpg",
+     "name":"Kylian Mbappe",
+     "nationality":"France",
+     "clubs":"AS Monaco,Paris Saint-Germain",
+     "goals":270,
+     "matches":382
+  },
+  {
+     "image":"https://tse1.mm.bing.net/th?id=OIP.DAbXuVi9sxDW9FWZEaw8fAHaF7&pid=Api&P=0&h=220",
+     "name":"Robert Lewandowski",
+     "nationality":"Polish",
+     "clubs":"Bayern Munich (Germany),Borussia Dortmund (Germany),Lech Poznań (Poland)",
+     "goals":500,
+     "matches":158
+  }
+]}
