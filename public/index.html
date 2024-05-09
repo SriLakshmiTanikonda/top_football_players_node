@@ -1,368 +1,433 @@
-
 <!DOCTYPE html>
-<html lang="en" >
-  <head>
+<html lang="en">
 
-   <meta charset="UTF-8">
-   <title>SriLakshmi-Portfolio</title>
+<head>
+
+  <meta charset="UTF-8">
+  <title>SriLakshmi-Portfolio</title>
   <!-- Fontawesome CDN Link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <style>
-        *{
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-h2 {
-color:rgba(23, 29, 39, 0.897);
-margin: 10px;
-}
-nav{
-background: #ffffff;
-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-overflow: hidden;
-margin: 10px;
-width: 100%;
-border: 3px solid rgba(14, 35, 87, 0.824);
-height:auto;
-}
-nav .topnav{
-display: flex;
-align-items: center;
-justify-content: space-between;
-height: auto;
-background: #1282de83;
-margin: 10px;
-}
-nav .topnav a {
-float: left;
-display: block;
-color: #303971e4;
-text-align: center;
-padding: 14px 16px;
-text-decoration: none;
-font-size: 20px;
-height:auto;
-}
-nav .topnav .logo {
-color: #303971e4;
-font-size: 40px;
-height:auto;
-}
-.topnav a:hover {
-background-color: #3f3d80d1;
-color: #1282de83;
-height:auto;
-}
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
 
-.topnav a.active {
-background-color: #3f3d80d1;
-color: #1282de83;
-height:auto;
-}
-.topnav .icon {
-display: none;
-}
-section{
-height:auto;
-align-items: center;
-justify-content: center;
-}
-.aboutClass{
-padding: 1rem;
-display: flex;
-flex-direction: row;
-background: #b1e8b6;
-}
-#aboutCard{
-width: 100%;
-height: 300px;
-display: flex;
-align-content: center;
-border: 3px solid rgb(67, 168, 161);
-}
-img{
-padding: 35px;
-background-color: white;
-height: 210px;
-width: 240px;
-}
-#aboutDesc{
-  width: 100%;
-  height:auto;
-  margin: 25px;
-  line-height: 30px;
-  color: #1f512a;
-  display:inline-block;
-  padding:20px;
-  font-size: 20px;
-}
-#Education{
-  background:rgb(128, 192, 238);
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  width:auto;
-  font-size: 20px;
-  height:auto;
-  margin: 10px;
-  padding: 10px;
-  perspective:300px;
-  color: #303971e4;
-  border: 3px solid rgb(68, 82, 117);
+    h2 {
+      color: rgba(23, 29, 39, 0.897);
+      margin: 10px;
+    }
 
-}
-.Projects{
-width: 100%;
-height: 100%;
-}
-.projectClass{
-flex-direction: row;
-display: flex;
-height:auto;
-background: rgba(190, 209, 85, 0.548);
-margin:10px;
-border: 3px solid rgb(67, 168, 161);
-}
-.projectCard {
-font-size: 20px;
-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
-text-align: center;
-background-color: #b1e8b6;
-margin: 1em;
-flex:25%;
-border: 3px solid rgb(67, 168, 161);
-}
-.projectTitle {
-  background-color: #2a613add;
-  color: white;
-  padding: 40px 10px;
-  margin:auto;
-}
-.projectDesc {
-text-align: center;
-padding: 1em;
-}
-.Experiences{
-background: #1282de83;
-width: 100%;
-height: 100%;
-border: 3px solid #303971e4;
-}
-.experienceClass{
-background: #de128c45;
-border: 3px solid #303971e4;
-}
-.experienceCard {
-background:  #1282de61;
-color: #303971e4;
-padding: 10px;
-margin: 10px;
-}
+    nav {
+      background: #ffffff;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      margin: 10px;
+      border: 3px solid rgba(14, 35, 87, 0.824);
+      height: auto;
+    }
 
-.experienceDesc {
-font-size: 20px;
-color: #303971e4;
-}
+    .topnav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 60px;
+      background: #1282de83;
+      padding: 10px;
+    }
 
-.experienceTitle {
-font-size: 20px;
-}
-#Blog{
-background-color: #b1e8b6;
-padding: 5px;
-font-size: 20px;
-color: #346d2b;
-text-decoration: none;
-border: 3px solid rgb(67, 168, 161);
-margin: 10px;
-height: auto;
-}
-.blogClass{
-font-size: 20px;
-color:#346431;
-text-decoration: none;
-}
-footer {
-height: auto;
-width: 100%;
-padding: 3px;
-background-color: rgba(190, 209, 85, 0.548);
-color: #673867e4;
-text-align: center;
-justify-content: space-around;
-font-size: 20px;
-margin: 10px;
-border: 3px solid rgb(47, 84, 82);
-}
-.footerIcons{
-border-radius: 6px;
-color:#F8F5F1;
-}
-@media only screen and (max-width:500px) {
-.aboutClass {
-  display: grid;
+    .topnav a {
+      float: left;
+      display: block;
+      color: #303971e4;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 20px;
+      height: auto;
+    }
 
-}
-#aboutCard {
-  display : grid;
-  width: 100%;
+    .topnav .logo {
+      color: #303971e4;
+      font-size: 40px;
+      height: auto;
+    }
 
-}
-img {
+    .topnav a:hover {
+      background-color: #3f3d80d1;
+      color: #1282de83;
+      height: auto;
+    }
 
-  height: 300px;
-  width : 300px;
-}
+    .topnav a.active {
+      background-color: #3f3d80d1;
+      color: #1282de83;
+      height: auto;
+    }
 
-#aboutDesc {
-  font-size : 20px;
-  width: auto;
+    .topnav .icon {
+      display: none;
+    }
 
-}
-section{
-  display: grid;
-  height: auto;
-  width: 100%;
-}
+    section {
+      height: auto;
+      align-items: center;
+      justify-content: center;
+    }
 
-.educationClass {
-  display: grid;
-  height: 500px;
-  width: 100%;
-}
+    #About {
+      background: #b1e8b6;
+      border: 3px solid rgb(67, 168, 161);
+      margin: 10px;
+      padding: 10px;
 
-.educationCard {
-  width: 350px;
-}
+    }
 
-.projectClass {
-  display: grid;
-  width: 100%;
-}
+    .aboutClass {
+      display: flex;
+      flex-direction: row;
+    }
 
-.experienceDesc {
-  height: auto;
-  font-size: 20px;
-  width: 100%;
-}
+    #aboutCard {
+      display: flex;
+      align-content: center;
+    }
 
-.experienceClass {
-  width: 100%;
-}
+    img {
+      padding: 20px;
+      background-color: white;
+    }
 
-#Blog{
-  font-size: 20px;
-  width: 100%;
-  margin:10px;
-  height:50px;
-  background-color: rgb(128, 192, 238);
-  border: 3px solid rgb(68, 82, 117);
-}
+    #aboutDesc {
+      height: auto;
+      line-height: 30px;
+      color: #1f512a;
+      display: inline-block;
+      padding: 20px;
+      font-size: 20px;
+    }
 
-footer{
-  display: grid;
-  height: auto;
-  width: 100%;
-}
+    #Education {
+      background: rgb(128, 192, 238);
+      border: 3px solid rgb(68, 82, 117);
+      margin: 10px;
+      padding: 10px;
+    }
 
-}
-@media only screen and (max-width:600px) {
-.aboutClass {
-  display: grid;
+    .educationCard {
+      border: 2px solid #000;
+      padding-left: 10px;
+      padding-right: 10px;
+      background-color: #eadccb;
+    }
 
-}
+    .educationClass {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      width: auto;
+      font-size: 20px;
+      height: auto;
+      perspective: 300px;
+      color: #303971e4;
+      margin: 10px;
+      padding: 10px;
+      gap:10px
+    }
 
-#aboutCard {
-  display : grid;
-  width: 100%;
+    .Projects {
+      height: 100%;
+    }
 
-}
+    #Projects {
+      background: rgba(190, 209, 85, 0.548);
+      border: 3px solid rgb(67, 168, 161);
+      margin: 10px;
+      padding: 10px;
+    }
 
-img {
+    .projectClass {
+      flex-direction: row;
+      display: flex;
+      height: auto;
+      margin: 10px;
+    }
 
-  height: 300px;
-  width : 300px;
-}
+    .projectCard {
+      font-size: 20px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+      text-align: center;
+      background-color: #b1e8b6;
+      margin: 0 1em;
+      flex: 25%;
+      border: 3px solid rgb(67, 168, 161);
+    }
 
-#aboutDesc {
-  font-size : 20px;
-  width: auto;
+    .projectTitle {
+      background-color: #2a613add;
+      color: white;
+      padding: 40px 10px;
+      margin: auto;
+    }
 
-}
+    .projectDesc {
+      text-align: center;
+      padding: 1em;
+    }
 
-}
+    .Experiences {
+      background: #1282de83;
+      height: 100%;
+      border: 3px solid #303971e4;
+    }
 
-@media only screen and (max-width:300px) {
-.educationClass {
-  display: grid;
-  height: 500px;
-  width: 100%;
-}
+    .experienceClass {
+      background: rgb(128, 192, 238);
+      border: 3px solid #303971e4;
+      padding: 10px;
+      margin: 10px;
+    }
 
-.educationCard {
-  width: 250px;
-}
+    .experienceCard {
+      background: #eadccb;
+      color: #303971e4;
+      padding: 10px;
+      margin: 10px;
+    }
 
-}
+    .experienceDesc {
+      font-size: 20px;
+      color: #303971e4;
+    }
 
-@media only screen and (max-width: 500px) {
-.topnav a:not(:no-button) {display: none;}
-.topnav a.icon {
-  float: right;
-  display: block;
-}
-.topnav.responsive {position: relative;}
-.topnav.responsive .icon {
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-.topnav.responsive a {
-  float: none;
-  display: block;
-  text-align: left;
-}
+    .experienceTitle {
+      font-size: 20px;
+    }
 
-}
-     </style>
-   </head>
-<body >
-  <nav id ="myNav">
-    <header class="topnav">
-      <p class="logo" >Tanikonda SriLakshmi<p>
-      <ul class="menu">
-        <a href="#About">About</a>
-        <a href="#Education">Education</a>
-        <a href="#Projects">Projects</a>
-        <a href="#Experiences">Experiences</a>
-        <a href="#Blog">Blogs</a>
-        <i class="fa fa-bars"></i></a>
-      </ul>
-    </header>
+    #Blog {
+      background-color: #b1e8b6;
+      padding: 10px;
+      font-size: 20px;
+      color: #346d2b;
+      text-decoration: none;
+      border: 3px solid rgb(67, 168, 161);
+      margin: 10px;
+      height: auto;
+      justify-content: flex-start;
+    }
+
+    .blogClass {
+      font-size: 20px;
+      color: #346431;
+      text-decoration: none;
+    }
+
+    footer {
+      height: auto;
+      padding: 3px;
+      background-color: #b1e8b6;
+      color: #673867e4;
+      text-align: center;
+      justify-content: space-around;
+      font-size: 20px;
+      margin: 10px;
+      border: 3px solid rgb(47, 84, 82);
+    }
+
+    .footerIcons {
+      border-radius: 6px;
+      color: #F8F5F1;
+    }
+
+    @media only screen and (max-width:500px) {
+      .aboutClass {
+        display: grid;
+
+      }
+
+      #aboutCard {
+        display: grid;
+      }
+
+      #aboutDesc {
+        font-size: 20px;
+        width: auto;
+
+      }
+
+      section {
+        display: grid;
+        height: auto;
+      }
+
+      .educationClass {
+        display: grid;
+        grid-template-columns: 1fr;
+      }
+
+      .projectClass {
+        display: grid;
+      }
+
+      .experienceDesc {
+        height: auto;
+        font-size: 20px;
+      }
+
+
+      #Blog {
+        font-size: 20px;
+        margin: 10px;
+        background-color: rgb(128, 192, 238);
+        border: 3px solid rgb(68, 82, 117);
+      }
+
+      footer {
+        display: grid;
+        height: auto;
+      }
+
+      .projectCard {
+        margin: 1em 0;
+      }
+
+    }
+
+    @media only screen and (max-width:600px) {
+      .aboutClass {
+        display: grid;
+
+      }
+
+      #aboutCard {
+        flex-direction: column;
+        height: auto;
+      }
+
+      img {
+        height: 150px;
+        width: 150px;
+      }
+
+      #aboutDesc {
+        font-size: 20px;
+        width: auto;
+
+      }
+
+      #aboutImage {
+        text-align: center;
+      }
+
+      .topnav.responsive {
+        position: relative;
+        flex-direction: column;
+      }
+
+      .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+
+      .topnav.responsive a {
+        float: none;
+        display: block !important;
+        text-align: left;
+      }
+
+      .topnav a:not(:first-child) {
+        display: none;
+      }
+
+      .topnav a.icon {
+        float: right;
+        display: block;
+      }
+
+    }
+
+    @media only screen and (max-width:730px) {
+      .topnav {
+        flex-wrap: wrap;
+        height: unset;
+      }
+    }
+
+    @media only screen and (max-width:300px) {
+      .educationClass {
+        display: grid;
+        height: 500px;
+      }
+
+      .educationCard {
+        width: 250px;
+      }
+
+    }
+
+    @media only screen and (max-width: 500px) {
+      .topnav a:not(:no-button) {
+        display: none;
+      }
+
+      .topnav a.icon {
+        float: right;
+        display: block;
+      }
+
+      .topnav.responsive {
+        position: relative;
+      }
+
+      .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+
+      .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+      }
+
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="topnav" id="myTopnav">
+    <p class="logo">Tanikonda SriLakshmi</p>
+    <a href="#About">About</a>
+    <a href="#Education">Education</a>
+    <a href="#Projects">Projects</a>
+    <a href="#Experiences">Experiences</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
   </nav>
 
   <main>
-    <h2>About Me: </h2>
-
     <section id="About">
-      <article  id="aboutCard" class="aboutClass">
-        <div id="aboutImage"> 
-          <img src="https://cdn-icons-png.flaticon.com/512/6833/6833591.png">
+      <h2>About Me: </h2>
+      <article id="aboutCard" class="aboutClass">
+        <div id="aboutImage">
+          <img width="200" height="200" src="https://cdn-icons-png.flaticon.com/512/6833/6833591.png">
         </div>
         <summary id="aboutDesc">
-          <p >
-            <h3>Tanikonda SriLakshmi</h3>
-            <h3>Major : Computer Science</h3>
-            <h3>School : University of New Haven</h3>
-        </p>
-    </summary>
-  </article>
+          <p>This is Srilakshmi Tanikonda currently pursuing my masters in Computer Science from University of New
+            Haven.I have worked as Devops Engineer for 3 years in TATA CONSULTANCY SERVICES. To increase my skills
+            technically, I decided to Pursue my Masters.My hobbies are Cooking, Listening music and reading Books.My
+            objective is to advance as a DevOps Engineer, contributing to organizational success through active
+            participation in initiatives that promote growth, both personally and professionally.</p>
+        </summary>
+      </article>
     </section>
-
-    <h2>Education: </h2>
-
-    <section id="Education" class="educationClass">
-      <article id = "edcucationCard1" class="educationCard">
+    <section id="Education">
+      <h2>Education: </h2>
+      <div class="educationClass">
+        <article id="edcucationCard1" class="educationCard">
           <h1 class="educationTitle">
             Masters
           </h1>
@@ -371,83 +436,86 @@ img {
             Course: Computer Science<br>
             Year:2023 - 2025
           </p>
-      </article>
-      <article id = "educationCard2" class="educationCard">
+        </article>
+        <article id="educationCard2" class="educationCard">
           <h1 class="educationTitle">
-            Bachelors 
+            Bachelors
           </h1>
           <p class="educationDesc">
             School:Vignan's Foundation for Science Technology and Research<br>
             Course: Computer Science<br>
             Year:2016 - 2020
           </p>
-      </article>
-    </section>
-
-    <h2>Projects: </h2>
-
-    <section id="Projects" class="projectClass">
-      <article id = "projectCard1" class="projectCard" >
-        <h1 class="projectTitle">Water Plant Management System</h1>
-        <summary class="projectDesc">
-          <p>The objective of the project is to manage all the water plants constructed by an NGO 
-            in order to fulfill the needs of people.
-          </p>
-        </summary>
-      </article>
-      <article id = "projectCard2" class="projectCard">
-        <h1 class="projectTitle">Sales Prediction</h1>
-        <summary class="projectDesc">
-          <p>
-            The objective of the project is to study the trends of market or stocks to predict the best possible strategy
-            to attain the profits.
-          </p>
-        </summary>
-      </article>
-    </section>
-
-    <h2>Experience: </h2>
-
-    <section id="Experiences" class="experienceClass">
-      <article class="experienceCard">
-          <h3 class="experienceTitle"></h3>
-          <summary class="experienceDesc">
-            <ul>
-              <li>
-                  <b>Company :</b> Tata Consultancy Services Pvt Ltd
-              </li>
-              <li>
-                <b>Technology :</b> Devops
-              </li>
-              <li>
-                <b>Location :</b> Hyderabad
-              </li>
-              <li>
-                <b>Duration :</b> 3 years
-              </li>
-              <li>
-                <b>Roles : </b> Implement and maintained CI/CD pipelines using Jenkins reducing deployment time by 50%.
-                Implement Infrastructure as Code principles using tools like Terraform, Ansible, or CloudFormation to automate infrastructure configuration.
-              </li>
-            </p>
-          </summary>
-      </article>
-    </section>
-
-    <h2>Blogs: </h2>
-
-    <section id="Blog" >
-    <div class="blog">
-      All my blogs are posted in Linkedin.
+        </article>
       </div>
     </section>
-
+    <section id="Projects">
+      <h2>Projects: </h2>
+      <div class="projectClass">
+        <article id="projectCard1" class="projectCard">
+          <h1 class="projectTitle">Water Plant Management System</h1>
+          <summary class="projectDesc">
+            <p>The objective of the project is to manage all the water plants constructed by an NGO
+              in order to fulfill the needs of people.
+            </p>
+          </summary>
+        </article>
+        <article id="projectCard2" class="projectCard">
+          <h1 class="projectTitle">Sales Prediction</h1>
+          <summary class="projectDesc">
+            <p>
+              The objective of the project is to study the trends of market or stocks to predict the best possible
+              strategy
+              to attain the profits.
+            </p>
+          </summary>
+        </article>
+      </div>
+    </section>
+    <section id="Experiences" class="experienceClass">
+      <h2>Experience: </h2>
+      <article class="experienceCard">
+        <h3 class="experienceTitle"></h3>
+        <summary class="experienceDesc">
+          <ul>
+            <li>
+              <b>Company :</b> Tata Consultancy Services Pvt Ltd
+            </li>
+            <li>
+              <b>Technology :</b> Devops
+            </li>
+            <li>
+              <b>Location :</b> Hyderabad
+            </li>
+            <li>
+              <b>Duration :</b> 3 years
+            </li>
+            <li>
+              <b>Roles : </b> Implement and maintained CI/CD pipelines using Jenkins reducing deployment time by 50%.
+              Implement Infrastructure as Code principles using tools like Terraform, Ansible, or CloudFormation to
+              automate infrastructure configuration.
+            </li>
+            </p>
+        </summary>
+      </article>
+    </section>
   </main>
   <footer>
-    <div id="footerIcons" class="fa fa-phone" >&nbsp;&nbsp; +1 (203) 823 - 2948 &nbsp;&nbsp; &nbsp;&nbsp; </div>
-    <div id="footerIcons"class="fa fa-envelope" >&nbsp;&nbsp;stani1@unh.newhaven.edu&nbsp;&nbsp;&nbsp;&nbsp;</div>
-    <div id="footerIcons" class="fa fa-linkedin" >&nbsp;&nbsp;<a href= "https://www.linkedin.com/in/sri-lakshmi-3463441b3/" style="color: #06010e">Linkedin</a></div>
+    <div id="footerIcons" class="fa fa-phone">&nbsp;&nbsp; +1 (203) 823 - 2948 &nbsp;&nbsp; &nbsp;&nbsp; </div>
+    <div id="footerIcons" class="fa fa-envelope">&nbsp;&nbsp;stani1@unh.newhaven.edu&nbsp;&nbsp;&nbsp;&nbsp;</div>
+    <div id="footerIcons" class="fa fa-linkedin">&nbsp;&nbsp;<a
+        href="https://www.linkedin.com/in/sri-lakshmi-3463441b3/" style="color: #06010e">Linkedin</a></div>
   </footer>
-
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
 </body>
+
 </html>
